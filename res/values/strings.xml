@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mood Clock Status Bar</string>
+    <string name="textoPadrao">Relogio Customizado:</string>
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Paleta de Cores</string>
+    <string name="press_color_to_apply">Defina a cor</string>
+    <string name="title_activity_main">Mood Clock Status Bar - Taiguara Duarte</string>
+    <string name="desenv">Taiguara Duarte - Português/Brasil</string>
+
+    <string name="font_Normal">Normal</string>
+    <string name="font_bold">Negrito</string>
+    <string name="font_italic">Itálico</string>
+    <string name="font_bold_italic">Itálico Negrito</string>
+    
+    
+    <!-- Sobre -->
+    <string name="pref_cat_about_title">Sobre</string>
+    <string name="pref_about_summary">Desenvolvido por: Taiguara Duarte - Português/Brasil.</string>
+   
+    <!-- configuração -->
+    <string name="pref_cat_config_title">Configuração</string>
+    <string name="pref_config_summary">Config</string>
+    
+    
+</resources>

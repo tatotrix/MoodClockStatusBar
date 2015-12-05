@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="pref_cat_config"
+        android:title="@string/pref_cat_config_title">
+        
+		    <PreferenceScreen 
+		            android:key="pref_cat_statusbar"
+		            android:title="Configurar Texto e Posição">
+		    <EditTextPreference
+		        android:dialogTitle="Texto ao lado do Relógio"
+		        android:key="pref_texto_relogio"
+		        android:summary="@string/textoPadrao"
+		        android:title="Texto exibido ao lado do relógio" />
+		    
+		    <SwitchPreference
+		        android:defaultValue="false"
+		        android:key="pref_texto_esquerdo"
+		        android:summary="Texto para lado esquerdo do relório (troca posição)"
+		        android:title="Texto para lado o esquerdo" />
+		    
+		    <SwitchPreference
+		        android:defaultValue="false"
+		        android:key="pref_hide"
+		        android:summary="Gira o relógio a 180 graus (Inverte)"
+		        android:title="Inverter relógio" />
+		    
+		    </PreferenceScreen>
+		    
+		    <PreferenceScreen 
+		            android:key="pref_cat_statusbar_colors"
+		            android:title="Mudar a cor do relógio">
+		
+		            <net.margaritov.preference.colorpicker.ColorPickerPreference 
+		                android:key="pref_color"
+		        		android:title="Mudar a cor do relógio"
+		                android:summary="Mudar a cor do Relógio para ele ficar mais bonito"
+		                 />
+		        </PreferenceScreen>
+		        
+		    <ListPreference
+		            android:key="pref_estilo_fonte"
+		            android:entries="@array/pref_estilo_fonte"
+		            android:entryValues="@array/pref_estilo_fonte_values"
+		            android:summary="Selecione o estilo da fonte"
+		            android:title="Estilo da fonte" />
+		        
+		    <ListPreference
+		            android:key="pref_tamanho_fonte"
+		            android:entries="@array/pref_tamanho_fonte"
+		            android:entryValues="@array/pref_tamanho_fonte_values"
+		            android:summary="Selecione o tamanho da fonte"
+		            android:title="Tamanho da fonte" />
+    
+ </PreferenceCategory>
+            
+        <PreferenceCategory
+        android:key="pref_cat_about"
+        android:title="@string/pref_cat_about_title">
+
+        <Preference
+            android:key="pref_about" 
+            android:summary="@string/pref_about_summary" />
+
+
+
+    	</PreferenceCategory>
+
+
+   
+</PreferenceScreen>
