@@ -24,16 +24,7 @@
             </intent-filter>
         </activity>
         
-        <activity 
-            android:name="br.taiguara.moodclock.sobre"
-            android:label="@string/title_activity_main" >
-            <intent-filter>
-	           <action android:name="android.intent.action.VIEW" />
-	           <category android:name="android.intent.category.DEFAULT" />
-          </intent-filter>
-        </activity>
-        
-        
+                
         <meta-data
             android:name="xposedmodule"
             android:value="true" />
