@@ -1,4 +1,4 @@
-package br.taiguara.moodclock;
+package br.taiguara.moodclockstatusbar;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -11,13 +11,13 @@ import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceActivity;
 import android.preference.SwitchPreference;
-import br.taiguara.smileyclock.R;
+import br.taiguara.moodclockstatusbar.R;
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
 @SuppressLint({ "WorldReadableFiles", "DefaultLocale" })
 public class MoodClockActivity extends PreferenceActivity {
 	
-	public static final String PREFERENCE = "clockprefs";
+	public static final String PREFERENCE = "moodclockprefs";
 	private EditTextPreference etpRelogio;
 	private ColorPickerPreference cor; 
 	private SwitchPreference chkHide;

@@ -1,4 +1,4 @@
-package br.taiguara.moodclock;
+package br.taiguara.moodclockstatusbar;
 
 import static de.robv.android.xposed.XposedHelpers.findAndHookMethod;
 
@@ -11,7 +11,7 @@ import de.robv.android.xposed.callbacks.XC_LoadPackage.LoadPackageParam;
 
 public class MoodClock implements IXposedHookLoadPackage {
 	
-	public static final String PREFERENCE = "clockprefs";
+	public static final String PREFERENCE = "moodclockprefs";
 	private static final String PACKAGE_NAME = MoodClock.class.getPackage().getName();
 	private XSharedPreferences prefs;
 	

@@ -29,7 +29,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.LinearLayout;
-import br.taiguara.smileyclock.R;
+import br.taiguara.moodclockstatusbar.R;
 
 public class ColorPickerDialog 
 	extends 

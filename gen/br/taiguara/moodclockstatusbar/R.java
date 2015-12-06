@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package br.taiguara.smileyclock;
+package br.taiguara.moodclockstatusbar;
 
 public final class R {
     public static final class array {
