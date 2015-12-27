@@ -34,23 +34,69 @@ public final class R {
         public static final int app_name=0x7f060000;
         public static final int desenv=0x7f060005;
         /**  Color Picker 
+ Color Picker 
          */
         public static final int dialog_color_picker=0x7f060002;
         public static final int font_Normal=0x7f060006;
         public static final int font_bold=0x7f060007;
         public static final int font_bold_italic=0x7f060009;
         public static final int font_italic=0x7f060008;
-        public static final int pref_about_summary=0x7f06000b;
-        /**  Sobre 
+        public static final int mensagem=0x7f06000c;
+        public static final int pref_about_summary=0x7f06001d;
+        /**  pref_cat_about 
+ pref_cat_about 
          */
-        public static final int pref_cat_about_title=0x7f06000a;
-        /**  configuração 
+        public static final int pref_cat_about_title=0x7f06001c;
+        public static final int pref_cat_config_summary=0x7f06000b;
+        /**  pref_cat_config 
+ pref_cat_config 
          */
-        public static final int pref_cat_config_title=0x7f06000c;
-        public static final int pref_config_summary=0x7f06000d;
+        public static final int pref_cat_config_title=0x7f06000a;
+        /**  pref_cat_statusbar_colors 
+ pref_cat_statusbar_colors 
+         */
+        public static final int pref_cat_statusbar_colors_title=0x7f060015;
+        /**  pref_cat_statusbar 
+ pref_cat_statusbar 
+         */
+        public static final int pref_cat_statusbar_title=0x7f06000d;
+        public static final int pref_color_summary=0x7f060017;
+        /**  pref_color 
+ pref_color 
+         */
+        public static final int pref_color_title=0x7f060016;
+        public static final int pref_estilo_fonte_summary=0x7f060019;
+        /**  pref_estilo_fonte 
+ pref_estilo_fonte 
+         */
+        public static final int pref_estilo_fonte_title=0x7f060018;
+        public static final int pref_position_summary=0x7f060014;
+        /**  pref_position 
+ pref_position 
+         */
+        public static final int pref_position_title=0x7f060013;
+        public static final int pref_tamanho_fonte_summary=0x7f06001b;
+        /**  pref_tamanho_fonte 
+ pref_tamanho_fonte 
+         */
+        public static final int pref_tamanho_fonte_title=0x7f06001a;
+        public static final int pref_texto_esquerdo_summary=0x7f060012;
+        /**  pref_texto_esquerdo 
+ pref_texto_esquerdo 
+         */
+        public static final int pref_texto_esquerdo_title=0x7f060011;
+        public static final int pref_texto_relogio_dialogTitle=0x7f06000f;
+        public static final int pref_texto_relogio_summary=0x7f060010;
+        /**  pref_texto_relogio 
+ pref_texto_relogio 
+         */
+        public static final int pref_texto_relogio_title=0x7f06000e;
         public static final int press_color_to_apply=0x7f060003;
-        public static final int textoPadrao=0x7f060001;
         public static final int title_activity_main=0x7f060004;
+        /**  xposeddescription 
+ xposeddescription 
+         */
+        public static final int xposeddescription_title=0x7f060001;
     }
     public static final class style {
         /** 
@@ -73,9 +119,20 @@ public final class R {
         res/values-v11/styles.xml on API 14+ devices.
     
  API 14 theme customizations can go here. 
+
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    
+
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        
          */
         public static final int AppBaseTheme=0x7f070000;
         /**  Application theme. 
+ All customizations that are NOT specific to a particular API-level can go here. 
+ Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f070001;

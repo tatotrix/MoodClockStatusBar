@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    <string name="app_name">Mood Clock Status Bar</string>
+
+    <!-- xposeddescription -->
+    <string name="xposeddescription_title">Mood on clock. Dev:Taiguara Duarte Tester:Ricardo Ferreira</string>
+    
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Color Picker Panel</string>
+    <string name="press_color_to_apply">Set the color</string>
+    <string name="title_activity_main">Mood Clock Status Bar - Taiguara Duarte/Ricardo Ferreira</string>
+    <string name="desenv">Taiguara Duarte - Português/Brasil</string>
+
+    <string name="font_Normal">Normal</string>
+    <string name="font_bold">Bold</string>
+    <string name="font_italic">Itálic</string>
+    <string name="font_bold_italic">Bold Itálic</string>
+   
+    <!-- pref_cat_config -->
+    <string name="pref_cat_config_title">Configuration</string>
+    <string name="pref_cat_config_summary">Config</string>
+    
+    <string name="mensagem">Will be changed so that the clock change the minute.</string>
+    
+    <!-- pref_cat_statusbar -->
+    <string name="pref_cat_statusbar_title">Configure Text and Position</string>
+    
+    <!-- pref_texto_relogio -->
+	<string name="pref_texto_relogio_title">Text displayed next to the clock</string>
+	<string name="pref_texto_relogio_dialogTitle">Text next to the clock</string>
+	<string name="pref_texto_relogio_summary">Custom clock</string>
+    
+	<!-- pref_texto_esquerdo -->
+	<string name="pref_texto_esquerdo_title">Text to the left side</string>
+	<string name="pref_texto_esquerdo_summary">Text to the left side of the clock (change position)</string>
+	
+	<!-- pref_position -->
+	<string name="pref_position_title">Invert clock</string>
+	<string name="pref_position_summary">Rotate the clock 180 degrees (Invert)</string>
+	
+	<!-- pref_cat_statusbar_colors -->
+	<string name="pref_cat_statusbar_colors_title">Changing the color of the clock</string>
+	
+	<!-- pref_color -->
+	<string name="pref_color_title">Changing the color of the clock</string>
+	<string name="pref_color_summary">Change the color to watch it look better</string>
+	
+	<!-- pref_estilo_fonte -->
+	<string name="pref_estilo_fonte_title">Font style</string>
+	<string name="pref_estilo_fonte_summary">Select font style</string>
+	
+	<!-- pref_tamanho_fonte -->
+	<string name="pref_tamanho_fonte_title">Font size</string>
+	<string name="pref_tamanho_fonte_summary">Select font size</string>
+	
+	 <!-- pref_cat_about -->
+    <string name="pref_cat_about_title">About</string>
+    <string name="pref_about_summary">Developer: Taiguara Duarte / Tester: Ricardo Ferreira - Português/Brasil.</string>
+    
+</resources>

@@ -1,28 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    
     <string name="app_name">Mood Clock Status Bar</string>
-    <string name="textoPadrao">Relogio Customizado:</string>
 
+    <!-- xposeddescription -->
+    <string name="xposeddescription_title">Senso de humor no relógio. Dev:Taiguara Duarte Tester:Ricardo Ferreira</string>
+    
     <!-- Color Picker -->
     <string name="dialog_color_picker">Paleta de Cores</string>
     <string name="press_color_to_apply">Defina a cor</string>
-    <string name="title_activity_main">Mood Clock Status Bar - Taiguara Duarte</string>
+    <string name="title_activity_main">Mood Clock Status Bar - Taiguara Duarte/Ricardo Ferreira</string>
     <string name="desenv">Taiguara Duarte - Português/Brasil</string>
 
     <string name="font_Normal">Normal</string>
     <string name="font_bold">Negrito</string>
     <string name="font_italic">Itálico</string>
     <string name="font_bold_italic">Itálico Negrito</string>
-    
-    
-    <!-- Sobre -->
-    <string name="pref_cat_about_title">Sobre</string>
-    <string name="pref_about_summary">Desenvolvido por: Taiguara Duarte - Português/Brasil.</string>
    
-    <!-- configuração -->
+    <!-- pref_cat_config -->
     <string name="pref_cat_config_title">Configuração</string>
-    <string name="pref_config_summary">Config</string>
+    <string name="pref_cat_config_summary">Config</string>
     
+    <string name="mensagem">Será alterado assim que o relógio mudar o minuto.</string>
+    
+    <!-- pref_cat_statusbar -->
+    <string name="pref_cat_statusbar_title">Configurar Texto e Posição</string>
+    
+    <!-- pref_texto_relogio -->
+	<string name="pref_texto_relogio_title">Texto exibido ao lado do relógio</string>
+	<string name="pref_texto_relogio_dialogTitle">Texto ao lado do Relógio</string>
+	<string name="pref_texto_relogio_summary">Relogio Customizado</string>
+    
+	<!-- pref_texto_esquerdo -->
+	<string name="pref_texto_esquerdo_title">Texto para lado o esquerdo</string>
+	<string name="pref_texto_esquerdo_summary">Texto para lado esquerdo do relório (troca posição)</string>
+	
+	<!-- pref_position -->
+	<string name="pref_position_title">Inverter relógio</string>
+	<string name="pref_position_summary">Gira o relógio a 180 graus (Inverte)</string>
+	
+	<!-- pref_cat_statusbar_colors -->
+	<string name="pref_cat_statusbar_colors_title">Mudar a cor do relógio</string>
+	
+	<!-- pref_color -->
+	<string name="pref_color_title">Mudar a cor do relógio</string>
+	<string name="pref_color_summary">Mudar a cor do Relógio para ele ficar mais bonito</string>
+	
+	<!-- pref_estilo_fonte -->
+	<string name="pref_estilo_fonte_title">Estilo da fonte</string>
+	<string name="pref_estilo_fonte_summary">Selecione o estilo da fonte</string>
+	
+	<!-- pref_tamanho_fonte -->
+	<string name="pref_tamanho_fonte_title">Tamanho da fonte</string>
+	<string name="pref_tamanho_fonte_summary">Selecione o tamanho da fonte</string>
+	
+	 <!-- pref_cat_about -->
+    <string name="pref_cat_about_title">Sobre</string>
+    <string name="pref_about_summary">Developer: Taiguara Duarte / Tester: Ricardo Ferreira - Português/Brasil.</string>
     
 </resources>

@@ -7,35 +7,35 @@
         
 		    <PreferenceScreen 
 		            android:key="pref_cat_statusbar"
-		            android:title="Configurar Texto e Posição">
+		            android:title="@string/pref_cat_statusbar_title">
 		    <EditTextPreference
-		        android:dialogTitle="Texto ao lado do Relógio"
+		        android:dialogTitle="@string/pref_texto_relogio_dialogTitle"
 		        android:key="pref_texto_relogio"
-		        android:summary="@string/textoPadrao"
-		        android:title="Texto exibido ao lado do relógio" />
+		        android:summary="@string/pref_texto_relogio_summary"
+		        android:title="@string/pref_texto_relogio_title" />
 		    
 		    <SwitchPreference
 		        android:defaultValue="false"
 		        android:key="pref_texto_esquerdo"
-		        android:summary="Texto para lado esquerdo do relório (troca posição)"
-		        android:title="Texto para lado o esquerdo" />
+		        android:summary="@string/pref_texto_esquerdo_summary"
+		        android:title="@string/pref_texto_esquerdo_title" />
 		    
 		    <SwitchPreference
 		        android:defaultValue="false"
-		        android:key="pref_hide"
-		        android:summary="Gira o relógio a 180 graus (Inverte)"
-		        android:title="Inverter relógio" />
+		        android:key="pref_position"
+		        android:summary="@string/pref_position_summary"
+		        android:title="@string/pref_position_title" />
 		    
 		    </PreferenceScreen>
 		    
 		    <PreferenceScreen 
 		            android:key="pref_cat_statusbar_colors"
-		            android:title="Mudar a cor do relógio">
+		            android:title="@string/pref_cat_statusbar_colors_title">
 		
 		            <net.margaritov.preference.colorpicker.ColorPickerPreference 
 		                android:key="pref_color"
-		        		android:title="Mudar a cor do relógio"
-		                android:summary="Mudar a cor do Relógio para ele ficar mais bonito"
+		        		android:title="@string/pref_color_title"
+		                android:summary="@string/pref_color_summary"
 		                 />
 		        </PreferenceScreen>
 		        
@@ -43,15 +43,15 @@
 		            android:key="pref_estilo_fonte"
 		            android:entries="@array/pref_estilo_fonte"
 		            android:entryValues="@array/pref_estilo_fonte_values"
-		            android:summary="Selecione o estilo da fonte"
-		            android:title="Estilo da fonte" />
+		            android:summary="@string/pref_estilo_fonte_summary"
+		            android:title="@string/pref_estilo_fonte_title"/>
 		        
 		    <ListPreference
 		            android:key="pref_tamanho_fonte"
 		            android:entries="@array/pref_tamanho_fonte"
 		            android:entryValues="@array/pref_tamanho_fonte_values"
-		            android:summary="Selecione o tamanho da fonte"
-		            android:title="Tamanho da fonte" />
+		            android:summary="@string/pref_tamanho_fonte_summary"
+		            android:title="@string/pref_tamanho_fonte_title" />
     
  </PreferenceCategory>
             

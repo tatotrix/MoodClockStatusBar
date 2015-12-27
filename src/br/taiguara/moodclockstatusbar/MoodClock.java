@@ -3,6 +3,7 @@ package br.taiguara.moodclockstatusbar;
 import static de.robv.android.xposed.XposedHelpers.findAndHookMethod;
 
 import android.graphics.Color;
+import android.os.SystemClock;
 import android.widget.TextView;
 import de.robv.android.xposed.IXposedHookLoadPackage;
 import de.robv.android.xposed.XC_MethodHook;
@@ -20,7 +21,7 @@ public class MoodClock implements IXposedHookLoadPackage {
 		if (!lpparam.packageName.equals("com.android.systemui"))
 			return;
 		
-		//Faz uma reflection no objeto e captura a intancia atual
+		//Do a reflection in object and get the current instance
 		findAndHookMethod("com.android.systemui.statusbar.policy.Clock", 
 				lpparam.classLoader, "updateClock", new XC_MethodHook() {
             @Override
@@ -29,31 +30,38 @@ public class MoodClock implements IXposedHookLoadPackage {
             	
             	 prefs = new XSharedPreferences(PACKAGE_NAME, PREFERENCE);
             	
-            	 //Obtem os valores gravados na preferencia
+            	 //Get values in preference
             	 String texto = prefs.getString("pref_texto_relogio", "");
             	 int estilo = prefs.getInt("pref_estilo_fonte",0);
             	 int tamanho = prefs.getInt("pref_tamanho_fonte",10);
-            	 Boolean hide = prefs.getBoolean("pref_hide", false);
+            	 Boolean posicao = prefs.getBoolean("pref_position", false);
             	 Boolean textoEsquerdo = prefs.getBoolean("pref_texto_esquerdo", false);
-            	 String cor = prefs.getString("pref_color", "#FA8809");//color laranja como default
+            	 String cor = prefs.getString("pref_color", "#FA8809");//color orange by default
             	 
-            	 TextView tv = (TextView) param.thisObject; //Obtem o abjeto atual
+            	 TextView tv = (TextView) param.thisObject; //Get current object
 				 String text = tv.getText().toString();
 				 
+				//Concat a data/hour + text that user define.
 				 if(textoEsquerdo)
-					 tv.setText(texto + text); //Concatena a data/hora + o texto que o usuário definir.
+					 tv.setText(texto + text); 
 				 else
-					 tv.setText(text + texto); //Concatena a data/hora + o texto que o usuário definir.
+					 tv.setText(text + texto); 
 					 
 				 tv.setTextColor(Color.parseColor(cor)); // Define a cor que o usuário escolheu.
-				 tv.setRotation(hide ? 180 : 0); // Inverte o relogio em 180 graus.
-				 tv.setTypeface(tv.getTypeface(), estilo); // Alterar tipo da fonte.
-				 tv.setTextSize(tamanho);
 				 
-				 //SystemClock.uptimeMillis();
+				// Invert the clock in 180 degrees.
+				 if(posicao)
+					 tv.setRotation(180); 
+				 else
+					 tv.setRotation(0);
+					 
+				 tv.setTypeface(tv.getTypeface(), estilo); //Change font style
+				 
+				 tv.setTextSize(tamanho); //Change font size
+				 
+				 SystemClock.uptimeMillis();
 
             }//Final afterHookedMethod
-            
             
             
 		});// Final findAndHookMethod
@@ -61,7 +69,6 @@ public class MoodClock implements IXposedHookLoadPackage {
 		//SystemClock.uptimeMillis();
 		
 	}// Final handledLoadPackage
-	
 	
 	
 }

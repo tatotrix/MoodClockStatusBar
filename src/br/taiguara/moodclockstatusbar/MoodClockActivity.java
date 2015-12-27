@@ -11,6 +11,7 @@ import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceActivity;
 import android.preference.SwitchPreference;
+import android.widget.Toast;
 import br.taiguara.moodclockstatusbar.R;
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
@@ -20,7 +21,7 @@ public class MoodClockActivity extends PreferenceActivity {
 	public static final String PREFERENCE = "moodclockprefs";
 	private EditTextPreference etpRelogio;
 	private ColorPickerPreference cor; 
-	private SwitchPreference chkHide;
+	private SwitchPreference chkPosition;
 	private ListPreference lstEstilo; //Estilo a fonte
 	private ListPreference lstTamanho; //Tamanho a fonte
 	private SwitchPreference chkTextoEsquerdo;
@@ -47,7 +48,7 @@ public class MoodClockActivity extends PreferenceActivity {
 			     editor.putString(preference.getKey(), (String) newValue);
 			     editor.commit();
 				
-				//Toast.makeText(getApplicationContext(), "Reinicie o celular para que as alterações funcionem!", Toast.LENGTH_LONG).show();
+				Toast.makeText(getApplicationContext(), R.string.mensagem, Toast.LENGTH_LONG).show();
 				return true;
 			}
 		});
@@ -65,7 +66,7 @@ public class MoodClockActivity extends PreferenceActivity {
 			     editor.putInt(preference.getKey(), Integer.parseInt(newValue.toString()));
 			     editor.commit();
 				
-				//Toast.makeText(getApplicationContext(), "Reinicie o celular para que as alterações funcionem!", Toast.LENGTH_LONG).show();
+			     Toast.makeText(getApplicationContext(), R.string.mensagem, Toast.LENGTH_LONG).show();
 				return true;
 			}
 		});
@@ -85,7 +86,7 @@ public class MoodClockActivity extends PreferenceActivity {
 			     editor.putInt(preference.getKey(), Integer.parseInt(newValue.toString()));
 			     editor.commit();
 				
-				//Toast.makeText(getApplicationContext(), "Reinicie o celular para que as alterações funcionem!", Toast.LENGTH_LONG).show();
+			     Toast.makeText(getApplicationContext(), R.string.mensagem, Toast.LENGTH_LONG).show();
 				return true;
 			}
 		});
@@ -107,7 +108,7 @@ public class MoodClockActivity extends PreferenceActivity {
 			     editor.putString(preference.getKey(), cor);
 			     editor.commit();
 				
-				//Toast.makeText(getApplicationContext(), "Reinicie o celular para que as alterações funcionem!", Toast.LENGTH_LONG).show();
+			     Toast.makeText(getApplicationContext(), R.string.mensagem, Toast.LENGTH_LONG).show();
 				return true;
 			}
 		});
@@ -124,14 +125,14 @@ public class MoodClockActivity extends PreferenceActivity {
 			     editor.putBoolean(preference.getKey(), (boolean) newValue);
 			     editor.commit();
 				
-				//Toast.makeText(getApplicationContext(), "Reinicie o celular para que as alterações funcionem!", Toast.LENGTH_LONG).show();
+			     Toast.makeText(getApplicationContext(), R.string.mensagem, Toast.LENGTH_LONG).show();
 				return true;
 			}
 		});
 		
 		
-		chkHide = (SwitchPreference) findPreference("pref_hide");
-		chkHide.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+		chkPosition = (SwitchPreference) findPreference("pref_position");
+		chkPosition.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
 			@Override
 			public boolean onPreferenceChange(Preference preference, Object newValue) {
 				
@@ -142,7 +143,7 @@ public class MoodClockActivity extends PreferenceActivity {
 			     editor.putBoolean(preference.getKey(), (boolean) newValue);
 			     editor.commit();
 				
-				//Toast.makeText(getApplicationContext(), "Reinicie o celular para que as alterações funcionem!", Toast.LENGTH_LONG).show();
+			     Toast.makeText(getApplicationContext(), R.string.mensagem, Toast.LENGTH_LONG).show();
 				return true;
 			}
 		});// Finaliza Evento Change do chk
